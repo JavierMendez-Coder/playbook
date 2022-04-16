@@ -10,7 +10,7 @@ const user = {
   getGeneralInfo: function () {
     return `The e-mail ${this.email} was created on ${this.createdDate}`;
   },
-}
+};
 
 console.log(`Username: ${user.name}`);
 console.log("Total emails sent and received " + user.getTotalEmails());

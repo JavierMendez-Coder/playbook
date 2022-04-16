@@ -10,7 +10,7 @@ const mail = {
   getGeneralInfo: function () {
     return `Mail: ${this.title}, body: ${this.body}, created on ${this.dateCreated}`;
   },
-}
+};
 
 console.log(`Author: ${mail.sender}`);
 console.log(mail.getSenderAndRecipients());

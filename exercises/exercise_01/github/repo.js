@@ -13,7 +13,7 @@ const repo = {
   getGeneralInfo: function () {
     return `This repository ${this.name} was created by ${this.author}`;
   },
-}
+};
 
 console.log("Repository's name: " + repo.name);
 console.log("Total issues: " + repo.getTotalIssues());

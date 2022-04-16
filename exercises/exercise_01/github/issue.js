@@ -16,7 +16,7 @@ const issue = {
   getGeneralInfo: function () {
     return `Issue: ${this.title}, status: ${this.status}, last updated: ${this.lastUpdated}`;
   },
-}
+};
 
 console.log("Issue's labels: " + issue.labels.join(", "));
 const { title, author } = issue.getTitleAndAuthor();

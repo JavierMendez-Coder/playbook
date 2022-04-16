@@ -10,7 +10,7 @@ const pullrequest = {
   getGeneralInfo: function () {
     return `PullRequest on branch ${pullrequest.branchName} created on ${pullrequest.dateCreated}`;
   },
-}
+};
 
 console.log(`PullRequest's name: ${pullrequest.title}`);
 console.log(`Status: ${pullrequest.getStatus()}`);
