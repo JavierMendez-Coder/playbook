@@ -1,16 +1,17 @@
-// Ejemplo 4: Métodos en los objetos
+// Example 4: Object's methods
 class Repository {
-  constructor(name, author, language, stars){
-   this.name = name
-   this.author = author
-   this.language = language
-   this.stars = stars
+  constructor(name, author, language, stars) {
+    this.name = name;
+    this.author = author;
+    this.language = language;
+    this.stars = stars;
   }
 
-  getInfo(){ // es una función que ejecutará cualquier objeto instanciado de esta clase
-    return `Repository ${this.name} has ${this.stars} stars`
+  getInfo() {
+    // Is a method that can be executed by every instance of this class
+    return `Repository ${this.name} has ${this.stars} stars`;
   }
 }
-console.log("Ejemplo 4: Métodos en los objetos")
-const myRepo = new Repository("LaunchX", "carlogilmar", "js", 100)
-console.log(myRepo.getInfo())
+console.log("Example 4: Object's methods");
+const myRepo = new Repository("LaunchX", "carlogilmar", "js", 100);
+console.log(myRepo.getInfo());

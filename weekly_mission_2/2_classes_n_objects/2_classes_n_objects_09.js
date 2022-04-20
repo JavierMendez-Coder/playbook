@@ -1,4 +1,4 @@
-// Ejemplo 10: Overrinding methods
+// Example 10: Methods override
 
 class Explorer{
   constructor(name, username, mission){
@@ -12,21 +12,21 @@ class Explorer{
   }
 }
 
-class Viajero extends Explorer {
+class Traveler extends Explorer {
   constructor(name, username, mission, cycle){
-    super(name, username, mission) // SUPER nos ayudará a llamar el constructor padre
-    this.cycle = cycle // Agregamos este atributo de la clase Viajero, es exclusiva de esta clase y no de la clase padre
+    super(name, username, mission) // super is a reserved word to call the parent class' constructor
+    this.cycle = cycle // Create a new attribute exclusive to this class
   }
 
   getGeneralInfo(){
-    let nameAndUsername = this.getNameAndUsername() // llamamos el método de la clase padre
-    // nameAndUsername  es una variable de esta función, no necesitas usar this para referenciarla.
+    let nameAndUsername = this.getNameAndUsername() // Call the parent method
+    // nameAndUsername is a local variable so it's no necessary to call it using this reserved word
     return `${nameAndUsername}, Ciclo ${this.cycle}`
   }
 }
 
-const viajero1 = new Viajero("Carlo", "LaunchX", "Node JS", "Abril 2022")
-console.log("Ejemplo 10: Overrinding methods")
-console.log(viajero1)
-console.log(viajero1.getNameAndUsername()) // Método de la clase padre
-console.log(viajero1.getGeneralInfo()) // Método de la clase hija
+const traveler = new Traveler("Carlo", "LaunchX", "Node JS", "April 2022")
+console.log("Example 10: Methods Override")
+console.log(traveler)
+console.log(traveler.getNameAndUsername()) // Parent class' method
+console.log(traveler.getGeneralInfo()) // Child class' method

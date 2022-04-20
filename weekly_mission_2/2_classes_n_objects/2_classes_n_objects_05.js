@@ -1,20 +1,20 @@
-// Ejemplo 6: Getters para acceder a los atributos del objeto
+// Example 6: Getters to access the class' attributes value
 
 class Ajolonauta {
-  constructor(name, age, stack){
-   this.name = name
-   this.age = age
-   this.stack = stack
-   this.exercises_completed = 0
-   this.exercises_todo = 99
+  constructor(name, age, stack) {
+    this.name = name;
+    this.age = age;
+    this.stack = stack;
+    this.exercisesCompleted = 0;
+    this.exercisesTodo = 99;
   }
 
-  // Podemos acceder a los atributos de esta clase
+  // We can access the attributies of this class
   get getExercisesCompleted() {
-		return this.exercises_completed
+    return this.exercisesCompleted;
   }
 }
 
-console.log("Ejemplo 6: Getters para acceder a los atributos del objeto")
-const woopa = new Ajolonauta("Woopa", 1, [])
-console.log(woopa.getExercisesCompleted)
+console.log("Example 6: Getters to access the object's attributes value");
+const woopa = new Ajolonauta("Woopa", 1, []);
+console.log(woopa.getExercisesCompleted);

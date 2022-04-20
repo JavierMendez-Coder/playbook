@@ -1,10 +1,14 @@
-// Ejemplo 7: Uso de filter para filtrar una lista de elementos
-const countries7 = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland']
-const countriesContainingLand = countries7.filter((country) => // esta es una función
-  country.includes('land') // indicación para solo filtrar elementos que incluyan "land"
-)
-console.log("Ejemplo 7: Uso de filter para filtrar una lista de elementos")
-console.log(countriesContainingLand)
-const countriesEndsByia = countries.filter((country) => country.endsWith('ia'))
-console.log("Ejemplo 7: Paises que terminan en i")
-console.log(countriesEndsByia)
+// Example 7: filter() to create a new list with all elements that pass the test implemented
+const countries = ["Finland", "Denmark", "Sweden", "Norway", "Iceland"];
+const countriesContainingLand = countries.filter(
+  (
+    country // Here starts the function
+  ) => country.includes("land") // filter the elements that includes the word land
+);
+console.log(
+  "Example 7: filter to create a new list with all elements that pass the test implemented"
+);
+console.log(countriesContainingLand);
+const countriesEndsByia = countries.filter((country) => country.endsWith("ia"));
+console.log("Example 7: Countries that ends with ia");
+console.log(countriesEndsByia);

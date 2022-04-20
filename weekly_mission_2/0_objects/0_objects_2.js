@@ -1,19 +1,15 @@
-// Ejemplo 3: Objeto con diferentes propiedades
+// Example 3: Object with different properties
 const myObject3 = {
-  name: "Tulio",
-  age: 2,
-  nicknames: [
-   "Tulipan",
-    "Tulancingo",
-    "Tulish"
-  ],
+  name: "Alejandro",
+  age: 12,
+  nicknames: ["Ale", "Alex"],
   address: {
-    zip_code: "10000",
-    street: "Dr. Vertiz 11 Benito Juarez",
-    city: "CDMX"
-  }
-}
-console.log("Ejemplo 3: Objeto con diferentes propiedades")
-console.log(myObject3)
-console.log(myObject3.name)
-console.log(myObject3["address"])
+    zip_code: "85130",
+    street: "Av. Jesús García",
+    city: "Cd. Obregón",
+  },
+};
+console.log("Example 3: Object with different properties");
+console.log(myObject3);
+console.log(myObject3.name);
+console.log(myObject3["address"]);

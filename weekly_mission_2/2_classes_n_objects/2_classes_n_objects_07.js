@@ -1,17 +1,14 @@
-// Ejemplo 8: Métodos static nos ayudan a escribir métodos en una clase que podemos usar sin necesidad de instanciar algún objeto
+// Example 8: Static methods allow us to call them without an instance of the object
 class Toolbox {
-  static getMostUsefulTools(){
-    return ["Command line", "git", "Text Editor"]
+  static getMostUsefulTools() {
+    return ["Command line", "git", "Text Editor"];
   }
 }
 
-console.log("Ejemplo 8: Métodos static")
-// Puedo llamar el método static directamente con el nombre de la clase
-console.log(Toolbox.getMostUsefulTools())
-// Si intentamos instanciar un objeto, no podremos llamar este método static
-//const toolbox = new Toolbox()
-//console.log(toolbox.getMostUsefulTools()) // is not a function
+console.log("Example 8: Static method");
+// We can call the static method directly with the class name
+console.log(Toolbox.getMostUsefulTools());
+// Creating an instance of the class won't allow us to call the method
 
-/*
-HERENCIA: Nos permite relacionar clases entre sí y rehusar sus componentes
-*/
+// const toolbox = new Toolbox()
+// console.log(toolbox.getMostUsefulTools()) // is not a function

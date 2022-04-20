@@ -1,4 +1,4 @@
-//Ejemplo 15: Uso de sort para ordenar elementos
-const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
-console.log("Ejemplo 15: Elementos ordernados usando SORT")
-console.log(products.sort())
+//Example 15: sort() sorts the elements of an array
+const products = ["Milk", "Coffee", "Sugar", "Honey", "Apple", "Carrot"];
+console.log("Example 15: sorted elements");
+console.log(products.sort());

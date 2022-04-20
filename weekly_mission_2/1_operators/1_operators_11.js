@@ -1,5 +1,5 @@
-// Ejemplo 12: Uso de find en una lista de objetos
-const scores12 = [
+// Example 12: find() in an objects list
+const scores = [
   { name: 'A', score: 95 },
   { name: 'M', score: 80 },
   { name: 'E', score: 50 },
@@ -7,5 +7,5 @@ const scores12 = [
   { name: 'J', score: 100 },
 ]
 
-const score_less_than_80 = scores12.find((user) => user.score > 80)
-console.log("Ejemplo 12. Name score found:" + score_less_than_80.name)
+const scoreLessThan80 = scores.find((user) => user.score < 80)
+console.log("Example 12. Name score found:" + scoreLessThan80.name)

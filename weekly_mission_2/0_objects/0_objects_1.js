@@ -1,7 +1,7 @@
-// Ejemplo 2: Crear un objeto con propiedades
+// Example 2: Creation of an object with properties
 const myObjetc2 = {
-  name: "Carlo",
-  age: 27
-}
-console.log("Ejemplo 2: Crear un objeto con propiedades")
-console.log(myObjetc2)
+  name: "Javier",
+  age: 23,
+};
+console.log("Example 2: Creation of an object with properties");
+console.log(myObjetc2);
